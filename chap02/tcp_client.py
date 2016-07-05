@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 import socket
 
-target_host = ''
-target_port = 80
+target_host = "0.0.0.0"
+target_port = 9999
 
 # create a socket object
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
