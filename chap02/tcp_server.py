@@ -15,7 +15,7 @@ server.listen(5)
 def handle_client(client_socket):
     request = client_socket.recv(1024)
     print("[*] Received: {0}".format(request))
-    client_socket.send("ACK!")
+    client_socket.send(b"ACK!")
     client_socket.close()
 
 
